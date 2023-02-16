@@ -26,6 +26,11 @@ body {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
 
+            h2{
+                display: none;
+
+            }
+
             button {
                 border: none;
                 width: 120px;
@@ -95,5 +100,28 @@ body {
     font-weight: 700;
     &::before{
         content: "~";
+    }
+}
+
+@media (max-width:375px) {
+    header{
+        
+        h1{
+            font-size: 14px;
+            display: none;
+        }
+        h2{
+            display: block;
+            font-size: 14px;
+        }
+
+        button{
+            width: fit-content;
+            font-size: 18px;
+        }
+    }
+
+    #quote{
+        display: none;
     }
 }

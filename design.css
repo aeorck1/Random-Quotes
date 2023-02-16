@@ -32,6 +32,10 @@ body header .topper h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body header .topper h2 {
+  display: none;
+}
+
 body header .topper button {
   border: none;
   width: 120px;
@@ -109,5 +113,25 @@ body header .topper button:hover {
 
 #author::before {
   content: "~";
+}
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 14px;
+    display: none;
+  }
+  header h2 {
+    display: block;
+    font-size: 14px;
+  }
+  header button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 18px;
+  }
+  #quote {
+    display: none;
+  }
 }
 /*# sourceMappingURL=design.css.map */
