@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body header {
+  background-color: #007070;
+  width: 100%;
+}
+
+body header .topper {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .topper h1 {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body header .topper button {
+  border: none;
+  width: 120px;
+  height: 50px;
+  margin: 10px 0;
+  background: none;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-transform: uppercase;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+}
+
+body header .topper button:hover {
+  background-color: #fff;
+  color: #007070;
+}
+
+#quote {
+  width: 70%;
+  height: 70vh;
+  background-color: #007070;
+  color: #fff;
+  border-radius: 60px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 60px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#quote img {
+  width: 100px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  position: absolute;
+}
+
+#quote .i1 {
+  top: 20px;
+  left: 20px;
+}
+
+#quote .i2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 20px;
+  bottom: 20px;
+}
+
+#author {
+  float: right;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 30px;
+  color: white;
+  background-color: #007070;
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#author::before {
+  content: "~";
+}
+/*# sourceMappingURL=design.css.map */
