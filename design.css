@@ -127,6 +127,18 @@ body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body footer a {
+  font-size: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+  padding: 0 5px;
 }
 
 @media (max-width: 375px) {
