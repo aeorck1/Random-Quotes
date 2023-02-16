@@ -56,17 +56,16 @@ body header .topper button:hover {
   color: #007070;
 }
 
-#quote {
-  width: 70%;
-  height: 70vh;
+body #quote {
+  width: 80%;
   background-color: #007070;
   color: #fff;
-  border-radius: 60px;
+  border-radius: 40px;
   margin: 30px auto;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  padding: 60px 30px;
+  padding: 90px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,60 +77,67 @@ body header .topper button:hover {
           justify-content: center;
 }
 
-#quote img {
+body #quote img {
   width: 100px;
   -webkit-filter: invert(1);
           filter: invert(1);
   position: absolute;
 }
 
-#quote .i1 {
+body #quote .i1 {
   top: 20px;
   left: 20px;
 }
 
-#quote .i2 {
+body #quote .i2 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   right: 20px;
   bottom: 20px;
 }
 
-#author {
+body #author {
   float: right;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-right: 30px;
-  color: white;
-  background-color: #007070;
+  color: #007070;
   padding: 10px 20px;
   height: 50px;
   font-size: 30px;
   font-weight: 700;
 }
 
-#author::before {
+body #author::before {
   content: "~";
 }
 
 @media (max-width: 375px) {
-  header h1 {
-    font-size: 14px;
+  header .topper h1 {
     display: none;
   }
-  header h2 {
-    display: block;
-    font-size: 14px;
+  header .topper h2 {
+    display: block !important;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
   }
-  header button {
+  header .topper button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 18px;
+    font-size: 13px;
   }
   #quote {
     display: none;
+    font-size: 18px !important;
+  }
+  #quote img {
+    width: 60px !important;
+  }
+  #author {
+    font-size: 20px !important;
   }
 }
 /*# sourceMappingURL=design.css.map */
