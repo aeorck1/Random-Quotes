@@ -1,3 +1,5 @@
+
+
 const quote=document.getElementById("quoter");
 const author=document.getElementById("author");
 
